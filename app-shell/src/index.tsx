@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createInstance, Piral, createStandardApi } from 'piral';
+import { createBlazorApi } from "piral-blazor";
 import { layout, errors } from './layout';
 
 // change to your feed URL here (either using feed.piral.cloud or your own service)
@@ -11,7 +12,7 @@ const instance = createInstance({
     components: layout,
     errorComponents: errors,
   },
-  plugins: [...createStandardApi()],
+  plugins: [...createStandardApi(), createBlazorApi()],
   requestPilets() {
     return fetch(feedUrl)
       .then((res) => res.json())

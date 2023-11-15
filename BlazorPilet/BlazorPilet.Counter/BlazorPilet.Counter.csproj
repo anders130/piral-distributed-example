@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <PiralInstance>../../app-shell/dist/emulators/app-shell-1.0.0.tgz</PiralInstance>
+    <PiralInstance>../../app-shell/app/emulator/app-shell-1.0.0.tgz</PiralInstance>
   </PropertyGroup>
 
   <ItemGroup>
