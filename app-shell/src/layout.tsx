@@ -4,6 +4,7 @@ import { ComponentsState, ErrorComponentsState, Menu, Notifications } from 'pira
 import { ErrorInfo } from './components/error-page';
 import { DashboardContainer, DashboardTile } from './components/dashboard';
 import { MenuContainer, MenuItem } from './components/menu';
+import { Footer } from './components/footer';
 
 export const errors: Partial<ErrorComponentsState> = {
   not_found: () => (
@@ -25,6 +26,7 @@ export const layout: Partial<ComponentsState> = {
       <Notifications />
       <Menu type="general" />
       <div className="container">{children}</div>
+      <Footer/>
     </div>
   ),
   MenuContainer,
