@@ -23,3 +23,31 @@ pilet new ./app-shell/app/emulator/app-shell-1.0.0.tgz --target react-pilet
 ```ps1
 npm run start
 ```
+## blazor pilet
+`.csproj`:
+```xml
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- sample app-shell -->
+    <PiralInstance>sample-piral</PiralInstance>
+    <!-- local app-shell -->
+    <PiralInstance>../../app-shell/app/emulator/app-shell-1.0.0.tgz</PiralInstance>
+    <!-- app-shell from private npm-registry -->
+    <PiralInstance>app-shell-npm-name@version</PiralInstance>
+    <NpmRegistry>https://npm-registry-domain.com/company/</NpmRegistry>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.11" />
+    <PackageReference Include="Piral.Blazor.DevServer" Version="7.0.10-pre.20231110.1" />
+    <PackageReference Include="Piral.Blazor.Tools" Version="7.0.10-pre.20231110.1" />
+    <PackageReference Include="Piral.Blazor.Utils" Version="7.0.10-pre.20231110.1" />
+  </ItemGroup>
+
+</Project>
+
+```
