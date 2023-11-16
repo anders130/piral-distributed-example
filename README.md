@@ -23,6 +23,10 @@ pilet new ./app-shell/app/emulator/app-shell-1.0.0.tgz --target react-pilet
 ```ps1
 npm run start
 ```
+### publish to feed
+```ps1
+npx pilet publish --fresh --url https://feed.piral.cloud/api/v1/pilet/feed-name --api-key <your-api-key>
+```
 ## blazor pilet
 `.csproj`:
 ```xml
@@ -50,4 +54,19 @@ npm run start
 
 </Project>
 
+```
+
+### publish to feed
+#### 1. Set the `PublishFeedUrl`:
+```xml
+<PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PublishFeedUrl>https://feed.piral.cloud/api/v1/pilet/feed-name</PublishFeedUrl>
+</PropertyGroup>
+```
+#### 2. Publish using `FolderProfile`:
+```ps1
+dotnet publish -p:PublishProfile=FolderProfile
 ```
