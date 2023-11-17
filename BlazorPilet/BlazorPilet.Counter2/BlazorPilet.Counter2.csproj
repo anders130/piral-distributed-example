@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PiralInstance>../../app-shell/app/emulator/app-shell-1.0.0.tgz</PiralInstance>
+    <PublishFeedUrl>https://feed.piral.cloud/api/v1/pilet/piral-distributed-example-feed</PublishFeedUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.11" />
+    <PackageReference Include="Piral.Blazor.DevServer" Version="7.0.10-pre.20231110.1" />
+    <PackageReference Include="Piral.Blazor.Tools" Version="7.0.10-pre.20231110.1" />
+    <PackageReference Include="Piral.Blazor.Utils" Version="7.0.10-pre.20231110.1" />
+  </ItemGroup>
+
+</Project>

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34302.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPilet.Counter", "BlazorPilet.Counter\BlazorPilet.Counter.csproj", "{15616D54-E224-466E-9A49-D9327586AAF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPilet.Counter2", "BlazorPilet.Counter2\BlazorPilet.Counter2.csproj", "{19193242-49A1-4BCF-91BB-DD8B5A74F311}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{15616D54-E224-466E-9A49-D9327586AAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15616D54-E224-466E-9A49-D9327586AAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15616D54-E224-466E-9A49-D9327586AAF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19193242-49A1-4BCF-91BB-DD8B5A74F311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19193242-49A1-4BCF-91BB-DD8B5A74F311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19193242-49A1-4BCF-91BB-DD8B5A74F311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19193242-49A1-4BCF-91BB-DD8B5A74F311}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
