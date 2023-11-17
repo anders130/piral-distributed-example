@@ -12,9 +12,16 @@
 @code {
     private int currentCount = 0;
 
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (!firstRender) return;
+        PiletService.AddEventListener<int>("counter-notify", count => currentCount += count);
+    }
+
     private async void IncrementCount()
     {
         currentCount++;
         await PiletService.ShowNotification($"Hello, this is the blazor pilet 2 currentCount: {currentCount}", 2000);
+        PiletService.DispatchEvent("counter-notify", currentCount);
     }
 }
