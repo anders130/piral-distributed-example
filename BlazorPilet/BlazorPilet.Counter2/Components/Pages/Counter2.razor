@@ -15,14 +15,6 @@
     private async void IncrementCount()
     {
         currentCount++;
-        await PiletService.ShowNotification($"Hello, this is the blazor pilet 2 currentCount: {currentCount}", new NotifyOptions
-        {
-            AutoClose = 2000
-        });
-    }
-
-    private class NotifyOptions
-    {
-        public int AutoClose { get; set; }
+        await PiletService.ShowNotification($"Hello, this is the blazor pilet 2 currentCount: {currentCount}", 2000);
     }
 }

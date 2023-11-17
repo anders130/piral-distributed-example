@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -13,6 +13,10 @@
     <PackageReference Include="Piral.Blazor.DevServer" Version="7.0.10-pre.20231110.1" />
     <PackageReference Include="Piral.Blazor.Tools" Version="7.0.10-pre.20231110.1" />
     <PackageReference Include="Piral.Blazor.Utils" Version="7.0.10-pre.20231110.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorPilet.Shared\BlazorPilet.Shared.csproj" />
   </ItemGroup>
 
 </Project>

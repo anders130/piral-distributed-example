@@ -15,4 +15,8 @@
     <PackageReference Include="Piral.Blazor.Utils" Version="7.0.10-pre.20231110.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorPilet.Shared\BlazorPilet.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
