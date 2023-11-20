@@ -13,6 +13,8 @@ npm run start
 ### Create an npm package for the app-shell
 ```ps1
 npm run build
+vsts-npm-auth -config .npmrc
+npm publish
 ```
 ## react-pilet
 ### Scaffold a new pilet for the app-shell
