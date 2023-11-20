@@ -1,4 +1,4 @@
-﻿namespace BlazorPilet.Counter;
+﻿namespace BlazorPilet.Counter2;
 
 public class Module
 {

@@ -5,7 +5,7 @@ import { createBlazorApi } from "piral-blazor";
 import { layout, errors } from './layout';
 
 // change to your feed URL here (either using feed.piral.cloud or your own service)
-const feedUrl = 'https://feed.piral.cloud/api/v1/pilet/piral-distributed-example-feed';
+const feedUrl = 'https://feed-service.azurewebsites.net/api/v1/pilet/test-feed';
 
 const instance = createInstance({
   state: {
