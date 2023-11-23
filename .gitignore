@@ -1,5 +1,6 @@
 app/
 dist/
+config.js
 
 # Logs
 logs

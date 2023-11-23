@@ -16,6 +16,18 @@ npm run build
 vsts-npm-auth -config .npmrc
 npm publish
 ```
+### Authentication with msal
+- create app-registration with redirect-url set to `http:localhost:1234/auth`
+- add your users to the app using **Microsoft Entra ID**
+- Go to `Authentication` and enable Accesstoken and ID-Token
+- create config.js in src folder
+  ```js
+  export const config = {
+    clientId: 'your-client-id',
+    authority: 'https://login.microsoftonline.com/tenant-id',
+  };
+  ```
+
 ## react-pilet
 ### Scaffold a new pilet for the app-shell
 ```ps1
