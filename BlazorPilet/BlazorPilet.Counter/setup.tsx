@@ -1,8 +1,6 @@
 import { PiletApi } from '../piral~/BlazorPilet.Counter/node_modules/app-shell';
 
-type AddScript = (path: string, attrs?: Record<string, string>) => void;
-type AddStyles = (path: string, pos?: 'first' | 'last' | 'before' | 'after') => void;
-
-export default (app: PiletApi, addScript: AddScript, addStyles: AddStyles) => {
+export default (app: PiletApi) => {
 	app.registerMenu(app.fromBlazor("counter-menu"));
+    app.registerMenu(app.fromBlazor("user-menu"), 0);
 };

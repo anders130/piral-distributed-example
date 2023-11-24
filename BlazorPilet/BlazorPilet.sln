@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPilet.Counter", "Blaz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPilet.Counter2", "BlazorPilet.Counter2\BlazorPilet.Counter2.csproj", "{19193242-49A1-4BCF-91BB-DD8B5A74F311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPilet.Shared", "BlazorPilet.Shared\BlazorPilet.Shared.csproj", "{AC941BCC-4328-4901-987C-AB88E842F91E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPilet.Shared", "BlazorPilet.Shared\BlazorPilet.Shared.csproj", "{AC941BCC-4328-4901-987C-AB88E842F91E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

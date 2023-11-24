@@ -1,0 +1,5 @@
+﻿@attribute [PiralComponent("user-menu")]
+
+<AuthorizeView>
+    @context.User.Identity?.Name
+</AuthorizeView>

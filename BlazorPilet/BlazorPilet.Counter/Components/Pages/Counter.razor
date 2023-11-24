@@ -9,6 +9,11 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<AuthorizeView>
+    <p>Hello, @context.User.Identity?.Name!</p>
+</AuthorizeView>
+
+
 @code {
     private int currentCount = 0;
 
@@ -17,8 +22,9 @@
         PiletService.AddEventListener<int>("counter-notify", count => PiletService.ShowNotification($"Hello, this is the other blazor pilet: {count}", 3000));
     }
 
-    private void IncrementCount()
+    private async Task IncrementCount()
     {
         currentCount++;
+        var token = await PiletService.GetAccessToken();
     }
 }
